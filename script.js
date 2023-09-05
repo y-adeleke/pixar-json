@@ -64,6 +64,28 @@ yearsFilter.addEventListener("change", function () {
 });
 
 ///////////////////////////////////////////////////////////
+yearsFilter.addEventListener("change", function () {
+  directorFilter.selectedIndex = 0;
+  orderFilter.selectedIndex = 0;
+  // Your Code Here
+  moviePoster.innerHTML = "";
+  let moviesfound = 0;
+
+  if (yearsFilter.value == "All Years") {
+    moviesobject.map((movie) => movie.MovieGenerator());
+    moviesfound++;
+  } else {
+    moviesobject.map((movie) => {
+      if (movie.releaseYear >= yearsFilter.value) {
+        movie.MovieGenerator();
+        moviesfound++;
+      }
+    });
+  }
+  if (moviesfound == 0) console.log("no movies found!");
+});
+
+///////////////////////////////////////////////////////////
 directorFilter.addEventListener("change", function () {
   yearsFilter.selectedIndex = 0;
   orderFilter.selectedIndex = 0;
