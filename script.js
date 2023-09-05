@@ -4,6 +4,11 @@ let directorFilter = document.getElementById("movie-director");
 let orderFilter = document.getElementById("movie-order");
 let moviePoster = document.getElementById("movie-posters");
 
+/*
+I created a class for all movies..
+in each object, movie informtion such as title, director, releaseDate, imdbRating, posterUrl
+it also includes a movie generator method that generate a html movie template.
+ */
 class Movie {
   constructor(movie) {
     let { title, director, releaseDate, imdbRating, posterUrl } = movie;
@@ -23,16 +28,18 @@ class Movie {
   };
 }
 
+//objects of the movie class are stored here
 let moviesobject = [];
 
 ///////////////////////////////////////////////////////////
 fileButton.addEventListener("change", function (e) {
-  // Your Code Here
   let reader = new FileReader();
   reader.onload = () => {
+    //read the json file
     let moviesData = JSON.parse(reader.result);
-    console.log(moviesData.movies.length);
     moviePoster.innerHTML = "";
+    //map through the movies dat and create a new movie object for each data
+    //aslo push it to the movies =object array
     moviesData.movies.map((movie) => {
       moviesobject.push(new Movie(movie));
     });
@@ -43,6 +50,7 @@ fileButton.addEventListener("change", function (e) {
 
 ///////////////////////////////////////////////////////////
 yearsFilter.addEventListener("change", function () {
+  //reset the other two select element
   directorFilter.selectedIndex = 0;
   orderFilter.selectedIndex = 0;
   // Your Code Here
@@ -63,30 +71,9 @@ yearsFilter.addEventListener("change", function () {
   if (moviesfound == 0) console.log("no movies found!");
 });
 
-/*
-yearsFilter.addEventListener("change", function () {
-  directorFilter.selectedIndex = 0;
-  orderFilter.selectedIndex = 0;
-  moviePoster.innerHTML = "";
-  let moviesfound = 0;
-
-  if (yearsFilter.value == "All Years") {
-    moviesobject.map((movie) => movie.MovieGenerator());
-    moviesfound++;
-  } else {
-    moviesobject.map((movie) => {
-      if (movie.releaseYear >= yearsFilter.value) {
-        movie.MovieGenerator();
-        moviesfound++;
-      }
-    });
-  }
-  if (moviesfound == 0) console.log("no movies found!");
-}); 
-*/
-
 ///////////////////////////////////////////////////////////
 directorFilter.addEventListener("change", function () {
+  //reset the other two select element
   yearsFilter.selectedIndex = 0;
   orderFilter.selectedIndex = 0;
   // Your Code Here
@@ -108,6 +95,7 @@ directorFilter.addEventListener("change", function () {
 
 ///////////////////////////////////////////////////////////
 orderFilter.addEventListener("change", function () {
+  //reset the other two select element
   directorFilter.selectedIndex = 0;
   yearsFilter.selectedIndex = 0;
   // Your Code Here
