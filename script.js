@@ -63,11 +63,10 @@ yearsFilter.addEventListener("change", function () {
   if (moviesfound == 0) console.log("no movies found!");
 });
 
-///////////////////////////////////////////////////////////
+/*
 yearsFilter.addEventListener("change", function () {
   directorFilter.selectedIndex = 0;
   orderFilter.selectedIndex = 0;
-  // Your Code Here
   moviePoster.innerHTML = "";
   let moviesfound = 0;
 
@@ -83,7 +82,8 @@ yearsFilter.addEventListener("change", function () {
     });
   }
   if (moviesfound == 0) console.log("no movies found!");
-});
+}); 
+*/
 
 ///////////////////////////////////////////////////////////
 directorFilter.addEventListener("change", function () {
