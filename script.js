@@ -31,6 +31,7 @@ fileButton.addEventListener("change", function (e) {
   let reader = new FileReader();
   reader.onload = () => {
     let moviesData = JSON.parse(reader.result);
+    console.log(moviesData.movies.length);
     moviePoster.innerHTML = "";
     moviesData.movies.map((movie) => {
       moviesobject.push(new Movie(movie));

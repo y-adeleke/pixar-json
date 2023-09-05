@@ -7,13 +7,7 @@
       "imdbRating": 8.3,
       "posterUrl": "01_ts.jpg"
     },
-    {
-      "title": "A Bug's Life",
-      "director": "John Lasseter",
-      "releaseDate": "November 25, 1998",
-      "imdbRating": 7.2,
-      "posterUrl": "02_abl.jpg"
-    },
+
     {
       "title": "Toy Story 2",
       "director": "John Lasseter",
@@ -28,20 +22,7 @@
       "imdbRating": 8.1,
       "posterUrl": "04_monsters_stroke.jpg"
     },
-    {
-      "title": "Finding Nemo",
-      "director": "Andrew Stanton",
-      "releaseDate": "May 30, 2003",
-      "imdbRating": 8.1,
-      "posterUrl": "05_nemo.jpg"
-    },
-    {
-      "title": "The Incredibles",
-      "director": "Brad Bird",
-      "releaseDate": "November 5, 2004",
-      "imdbRating": 8.0,
-      "posterUrl": "06_incredibles.jpg"
-    },
+
     {
       "title": "Cars",
       "director": "John Lasseter",
@@ -78,13 +59,6 @@
       "posterUrl": "11_ts3.jpg"
     },
     {
-      "title": "Cars 2",
-      "director": "John Lasseter",
-      "releaseDate": "June 24, 2011",
-      "imdbRating": 6.2,
-      "posterUrl": "12_cars2.jpg"
-    },
-    {
       "title": "Brave",
       "director": "Mark Andrews",
       "releaseDate": "June 22, 2012",
@@ -99,13 +73,6 @@
       "posterUrl": "14_MU_stroke.jpg"
     },
     {
-      "title": "Inside Out",
-      "director": "Pete Docter",
-      "releaseDate": "June 19, 2015",
-      "imdbRating": 8.2,
-      "posterUrl": "15_io.jpg"
-    },
-    {
       "title": "The Good Dinosaur",
       "director": "Peter Sohn",
       "releaseDate": "November 25, 2015",
@@ -113,25 +80,11 @@
       "posterUrl": "16_dino.jpg"
     },
     {
-      "title": "Finding Dory",
-      "director": "Andrew Stanton",
-      "releaseDate": "June 17, 2016",
-      "imdbRating": 7.3,
-      "posterUrl": "dory.jpg"
-    },
-    {
       "title": "Cars 3",
       "director": "Brian Fee",
       "releaseDate": "June 16, 2017",
       "imdbRating": 6.8,
       "posterUrl": "c3_teaser_poster.jpg"
-    },
-    {
-      "title": "Coco",
-      "director": "Lee Unkrich",
-      "releaseDate": "November 22, 2017",
-      "imdbRating": 8.4,
-      "posterUrl": "coco_poster.jpg"
     },
     {
       "title": "Incredibles 2",
